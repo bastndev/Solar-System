@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #1b1c23;
+    color: white;
+}
+/* Design - diseño */
+span
+{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+/* Sol - Planet */
+.sun
+{
+    width: 60px;
+    height: 60px;
+    background: url(/assets/img/sol.png);
+    background-position: center;
+    background-size: 75px;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px #ff8b17,
+                0 0 20px #ff8b17,
+                0 0 40px #ff8b17,
+                0 0 60px #ff8b17;
+    z-index: 9999;
+}
+.sun:hover
+{
+    width: 60px;
+    height: 60px;
+    background: url(/assets/img/moon.png);
+    background-position: center;
+    background-size: 75px;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px #d8d8d8,
+                0 0 20px #d8d8d8,
+                0 0 40px #d8d8d8,
+                0 0 60px #d8d8d8;
+    z-index: 9999;
+    cursor: pointer;   
+}
+/* Planet line Circle */
+.planet
+{
+    background: transparent;
+    border: 4px solid rgba(255,255,255,0.2);
+    animation: animate 10s linear infinite;
+}
+
+/* Animation planet  */
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%) rotate(0);
+    }100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+
+    }
+}
+/* planet */
+.planet1
+{
+    width: 110px;
+    height: 110px;
+}
+.planet2
+{
+    width: 160px;
+    height: 160px;
+}
+.planet3
+{
+    width: 220px;
+    height: 220px;
+}
+.planet4
+{
+    width: 270px;
+    height: 270px;
+}
+.planet5
+{
+    width: 340px;
+    height: 340px;
+}
+.planet6
+{
+    width: 430px;
+    height: 430px;
+}
+.planet7
+{
+    width: 500px;
+    height: 500px;
+}
+.planet8
+{
+    width: 570px;
+    height: 570px;
+}
+span::before,span::after
+{
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+/* planet - Circle Aniation */
+.planet1::before
+{
+    width: 20px;
+    height: 20%;
+    bottom: 6px;
+    left: 2px;
+    background: url(/assets/img/on1.jpg);
+    background-position: center;
+    background-size: 39px;
+    background-repeat: no-repeat;
+}
+.planet2::before
+{
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: 10px;
+    background: url(/assets/img/on2.png);
+    background-position: center;
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+/* Tierra - earth */
+.planet3::before
+{
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    right: -15px;
+    background: url(/assets/img/on3.png);
+    background-position: center;
+    background-size: 32px;
+    background-repeat: no-repeat;
+
+}
+.planet4::before
+{
+    width: 30px;
+    height: 30px;
+    top: 22px;
+    left: 210px;
+    background: url(/assets/img/on4.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.planet5::before
+{
+    width: 40px;
+    height: 40px;
+    bottom: -18px;
+    left: 170px;
+    background: url(/assets/img/on5.png);
+    background-position: center;
+    background-size: 45px;
+    background-repeat: no-repeat;
+}
+.planet6::after
+{
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    left: -7px;
+    background: url(/assets/img/on66.png);
+    background-position: center;
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+.planet6::before
+{
+    width: 80px;
+    height: 20px;
+    top: 115px;
+    left: -21px;
+    background: url(/assets/img/on6.png);
+    background-position: center;
+    background-size: 90px;
+    background-repeat: no-repeat;
+}
+.planet7::before
+{
+    width: 37px;
+    height: 37px;
+    bottom: 80px;
+    left: 30px;
+    background: url(/assets/img/on7.png);
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+.planet8::before
+{
+    width: 41px;
+    height: 41px;
+    top: 5px;
+    right: 140px;
+    background: url(/assets/img/on8.png);
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
